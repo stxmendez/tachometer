@@ -20,8 +20,8 @@
 #define MICRO_SECS_PER_MINUTE 60000000UL
 
 // Number of cycles per complete rotation of the encoder. Also equivalent to 
-// the number of encoder segments.
-#define CYCLES_PER_ROTATION   16UL
+// the number of encoder segments divided by 2.
+#define CYCLES_PER_ROTATION   8UL
 
 volatile unsigned long lastCaptureTime = 0;
 volatile unsigned long lastDelta = 0;
